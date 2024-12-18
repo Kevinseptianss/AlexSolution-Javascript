@@ -13,9 +13,9 @@ Provided to you are the following:
 Please provide us with the following:
 
   1. A brief (one or two page) document describing your thought process, how you arrived at the given solution and any challenges that you faced.
-  2. A simple program in your preferred language, no more than approximately one-thousand lines of code, that can produce a solution to the problem. 
+  2. A simple program in Java or Javascript, no more than approximately one-thousand lines of code, that can produce a solution to the problem. 
   3. A short test script that can be executed on any linux workstation to run your program with example input and parameters.
-  4. The git repository, included with this problem, complete with your commit history.
+  4. A local git repository is included in the zip file, please complete with your commit history. The git commits will be saved locally in this local git repository. Please do not upload commits to GitHub or any online/public git repository.
 
 We are primarily interested in your process, so any solution you can provide before the specified time and date will be sufficient. We also do not expect effort exceeding more than a few hours of your time, consider the length of your typical technical interview as a baseline.
 

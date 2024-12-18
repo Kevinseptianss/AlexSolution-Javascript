@@ -1,0 +1,10 @@
+1. First i try to read the csv file using FileStream and put it in array
+2. Getting the file exclude the first line, then make it in 2D array for courses id and the name, courses and the prerequisite
+3. After getting the 2D array i looping to get the course id and prerequisites it need example course 8 needed 6,7,10,12 
+   course before
+4. Then i looping again to get the course id and the prerequisite it need and check if the prerequisite is already taken or not
+5. If the prerequisite is already taken then i add the course id to the taken course array
+6. After looping all the course i will get the taken course array and print it out 
+7. Your prerequisites.csv i think it's imposible to complete, because the 4,9 the course 4 need to complete 1,3,9. Then 
+   course 9 need course 5, course 5 need course 4 it gonna loop forever
+8. If you delete prerequisites 4,9 my code will work properly because it's possible, your prerequisites is imposible to complete
