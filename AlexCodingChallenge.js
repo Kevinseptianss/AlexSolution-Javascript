@@ -35,11 +35,13 @@ for (let i = 0; i < courses.length; i++) { //looping the prerequisites to get ev
     preArr.push([courses[i][0], learned]); //put in prerequisites array
 }
 function main() { //the main function
+    let count = 0;
     while (preLearned.length < 11) { //looping until we get the 12 course
         for (let i = 0; i < preArr.length; i++) { //looping the prerequisites array
             if (!preLearned.includes(preArr[i][0])) { //check if course not already learned 
                 if (preArr[i][1].length == 0) { //check if the course doesn't have prerequisites
                     preLearned.push(preArr[i][0]); //put in learned array
+                    count = 0;
                 } else { //if not
                     console.log(preLearned + " - (" +  preArr[i][0] + " - " + preArr[i][1] + ")"); //for debugging and see the array that learned and the required prerequisites
                     if (arrAreEqual(preLearned, preArr[i][1])) { //if the prerequisites matching with course already been taken then
@@ -48,8 +50,16 @@ function main() { //the main function
                 }
             }
         }
+        count++;
+        if (count > 100) {
+            break;
+        }
     }
-    console.log(preLearned); //printed the result
+    if (count > 100) {
+        console.log("Couldn't proceed due to circular prerequisites");
+    } else {
+        console.log(preLearned); //printed the result
+    }
 }
 
 main(); //your prerequisites is imposible to complete because you have course 4 that require course 9, 
